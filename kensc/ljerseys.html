@@ -1,0 +1,580 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="images/favicon.png" type="image/x-icon">
+
+  
+  <meta name="keywords" content="" />
+  <meta name="description" content="" />
+  <meta name="author" content="" />
+
+  <title>Ken Sports Center</title>
+
+  
+  <link rel="stylesheet" type="text/css" href="css/bootstrap.css" />
+  <link href="https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap" rel="stylesheet" />
+  <link href="css/font-awesome.min.css" rel="stylesheet" />
+  <link href="css/style.css" rel="stylesheet" />
+  <link href="css/responsive.css" rel="stylesheet" />
+  <style>
+    .j_forms{
+      display: none;
+      position: fixed;
+      justify-self: center;
+      bottom: 200px;
+      right: 400px;
+      border: 3px solid rgb(165, 4, 165);
+      background-color: white;
+      /* z-index: 9; */
+    }
+    .form-container{
+      max-width: 400px;
+      padding: 10px;
+      background-color: white;
+      padding: 20px;
+}
+  button:hover{
+    opacity: 1;
+  }
+  label{
+    margin: 5px 0px;
+  }
+  .j_forms button{
+    margin: 5px 0px;
+  }
+
+</style>
+</head>
+
+<body class="sub_page">
+  <div class="hero_area">
+    <div class="hero_bg_box">
+      <img src="images/hero-bg.jpg" alt="">
+    </div>
+
+    <header class="header_section">
+      <div class="container">
+        <nav class="navbar navbar-expand-lg custom_nav-container ">
+          <a class="navbar-brand" href="index.html">
+            <img src="images/logo.png" alt="">
+            <span>
+              Ken Sports Center
+            </span>
+          </a>
+
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class=""> </span>
+          </button>
+
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <div class="d-flex mx-auto flex-column flex-lg-row align-items-center">
+              <ul class="navbar-nav  ">
+                <li class="nav-item ">
+                  <a class="nav-link" href="index.html">Home </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#about"> About</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="shop.html">Shop</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#why">Why Us</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="index.html#testimony">Testimonial</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </nav>
+      </div>
+    </header>
+    
+  </div>
+
+<section">
+
+<div style="display: flex; justify-content: space-around; margin-bottom: 10px; margin-top: 10px;" >    
+  <div>
+        <div style="max-width: 200px;">
+            <img src="images/j_acmilan.jpg" height="200px" width="200px" alt="milan">
+            <p>AC Milan Jersey:<br>20000-40000</p><button onclick="form_ac()">Add to cart</a></button>
+        </div>
+
+        <div id="acform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="ACMilan"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_acmilan.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_acmilan_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;" class="inbutton">
+              <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+              <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+              <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/eqtvtf"><button name="order">ORDER</button></a><br> 
+          </form>
+          <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+    </div>
+
+    <div>
+      <div style="max-width: 200px;">
+            <img src="images/j_ajax.jpg" height="200px" width="200px" alt="villa">
+            <p>Ajax Jersey:<br>20000-40000</p><button onclick="form_aj()">Add to cart</a></button>
+        </div>
+        <div id="ajform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Ajax"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_ajax.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_ajax_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+    </div>
+
+    <div>
+      <div style="max-width: 200px;">
+            <img src="images/j_alhilal.jpg" height="200px" width="200px" alt="arsenal">
+            <p>Al hilal Jersey:<br>20000-40000</p><button onclick="form_al()">Add to cart</a></button>
+        </div>
+        <div id="alform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Alhilal"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_alhilal.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_alhilal_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+    </div>
+
+    <div>
+      <div style="max-width: 200px;">
+            <img src="images/j_arsenal.jpg" height="200px" width="200px" alt="arsenal">
+            <p>Arsenal Jersey:<br>20000-40000</p><a class=""><button onclick="form_a()">Add to cart</a></button>
+        </div>
+        <div id="aform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Arsenal"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_arsenal.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_arsenal_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+    </div>
+
+</div><!--endrowone-->
+<div style="display: flex; justify-content: space-around; margin-bottom: 10px;" >
+  <div>
+    <div style="max-width: 200px;">
+          <img src="images/j_brighton.jpg" height="200px" width="200px" alt="arsenal">
+          <p>Brighton Jersey:<br>20000-40000</p><a class=""><button onclick="form_br()">Add to cart</a></button>
+        </div>
+        <div id="brform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Brighton"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_brighton.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_arsenal_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a> 
+        </div>
+  </div>
+
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_chelsea_h.jpg" height="200px" width="200px" alt="arsenal">
+      <p>Chelsea Jersey:<br>20000-40000</p><a class=""><button onclick="form_ch()">Add to cart</a></button>
+    </div>
+    <div id="chform" class="j_forms">
+      <form action="orders.php" method="post" class="form-container">
+        <label>CLUB:</label><br>
+        <input type="text" name="club" value="Chelsea"><br>
+        <label for="Jtype">VENUE:</label><br>
+        <input type="radio" name="Jtype" value="Home">
+          <img src="images/j_chelsea_h.jpg" width="75px" height="75px"><i> Home</i>
+        <input type="radio" name="Jtype" value="Away">   
+          <img src="images/j_arsenal_a.jpg" width="75px" height="75px"><i> Away</i><br> <!--chelsea away-->
+        <label for="size">SIZE:</label>
+      <div style="display: flex; justify-content: space-between;">
+        <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+        <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+        <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+       </div>
+       <label>CONTACT:</label><br>
+      <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+      <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+    </form>
+    <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+    </div>
+  </div>  
+
+  <div>
+    <div style="max-width: 200px;">
+          <img src="images/j_leicester.jpg" height="200px" width="200px" alt="arsenal">
+          <p>Leicester Jersey:<br>20000-40000</p><a class=""><button onclick="form_l()">Add to cart</a></button>
+        </div>
+        <div id="lform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Leicester"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_leicester_h.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_leicester_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a> 
+        </div>
+  </div>
+
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_rmadrid_h.jpg" height="200px" width="200px" alt="arsenal">
+      <p>Real Madrid Jersey:<br>20000-40000</p><a class=""><button onclick="form_ma()">Add to cart</a></button>
+    </div>
+    <div id="maform" class="j_forms">
+      <form action="orders.php" method="post" class="form-container">
+        <label>CLUB:</label><br>
+        <input type="text" name="club" value="Realmadrid"><br>
+        <label for="Jtype">VENUE:</label><br>
+        <input type="radio" name="Jtype" value="Home">
+          <img src="images/j_rmadrid_h.jpg" width="75px" height="75px"><i> Home</i>
+        <input type="radio" name="Jtype" value="Away">   
+          <img src="images/j_rmadrid_a.jpg" width="75px" height="75px"><i> Away</i><br>
+        <label for="size">SIZE:</label>
+      <div style="display: flex; justify-content: space-between;">
+        <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+        <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+        <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+       </div>
+       <label>CONTACT:</label><br>
+      <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+      <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+    </form>
+    <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+    </div>
+  </div>  
+
+</div>
+
+<div style="display: flex; justify-content: space-around; margin-bottom: 10px;" >
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_mancity_a.jpg" height="200px" width="200px" alt="arsenal">
+      <p>Man Ciy Jersey:<br>20000-40000</p><a class=""><button onclick="form_mc()">Add to cart</a></button>
+        </div>
+        <div id="mcform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Mancity"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_.jpg" width="75px" height="75px"><i> Home</i><!--get image-->
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_mancity_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+  </div>
+
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_manu.jpg" height="200px" width="200px" alt="arsenal">
+      <p>Man United Jersey:<br>20000-40000</p><a class=""><button onclick="form_mu()">Add to cart</a></button>
+        </div>
+        <div id="muform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="ManU"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_manu_h.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_manu_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+</div>
+
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_psg.jpg" height="200px" width="200px" alt="arsenal">
+      <p>PSG Jersey:<br>20000-40000</p><a class=""><button onclick="form_ps()">Add to cart</a></button>
+        </div>
+        <div id="psform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="PSG"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_psg.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_arsenal_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a>
+        </div>
+  </div>
+
+  <div>
+    <div style="max-width: 200px;">
+      <img src="images/j_totenham_a.jpg" height="200px" width="200px" alt="arsenal">
+      <p>Tottenham Jersey:<br>20000-40000</p><a class=""><button onclick="form_t()">Add to cart</a></button>
+        </div>
+        <div id="tform" class="j_forms">
+          <form action="orders.php" method="post" class="form-container">
+            <label>CLUB:</label><br>
+            <input type="text" name="club" value="Tottenham"><br>
+            <label for="Jtype">VENUE:</label><br>
+            <input type="radio" name="Jtype" value="Home">
+              <img src="images/j_psg.jpg" width="75px" height="75px"><i> Home</i>
+            <input type="radio" name="Jtype" value="Away">   
+              <img src="images/j_arsenal_a.jpg" width="75px" height="75px"><i> Away</i><br>
+            <label for="size">SIZE:</label>
+          <div style="display: flex; justify-content: space-between;">
+            <input type="checkbox" value="S" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>S</label> 
+            <input type="checkbox" value="M" name="size" style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>M</label>
+            <input type="checkbox" value="L" name="size"  style="padding: 0px 5px; color: rgb(165, 4, 165);"> <label>L</label>
+           </div>
+           <label>CONTACT:</label><br>
+          <input type="tel" name="contact" style="padding: 10px 20px;"><br>
+          <a href="https://wa.link/hhds6q"><button name="order">ORDER</button></a><br>
+        </form>
+        <a href="ljerseys.html" style="text-decoration: none;"><button style="background-color: red; margin-left: 70px;" class="col-sm-6" onclick="close()">CANCEL</button></a> 
+        </div>
+  </div>
+</div>
+
+  <!-- Link to order different jersey directly in whatsapp *Faster-->
+  <div class="product_section layout_padding"> 
+    <div class="btn-box">
+      <a href="">
+        Shop Others
+      </a>
+    </div>
+  </div>
+</section>
+
+<section class="info_section ">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-9 mx-auto">
+
+        <!-- <div class="info_form">
+          <h4>
+            Subscribe To Our Newsletter
+          </h4>
+          <form action="">
+            <input type="mail" placeholder="Enter your email...">
+            <button type="submit">
+              Subscribe
+            </button>
+          </form>
+        </div> -->
+
+        <h4>
+          Contact Us
+        </h4>
+        <div class="contact_items">
+          <a href="https://maps.app.goo.gl/XYoo9To1A8LAo8Zz7">
+            <div class="img-box">
+              <i class="fa fa-map-marker" aria-hidden="true"></i>
+            </div>
+            <h6>
+              Location
+            </h6>
+          </a>
+          <a href="haslerken@gmail.com">
+            <div class="img-box">
+              <i class="fa fa-envelope" aria-hidden="true"></i>
+            </div>
+            <h6>
+              haslerken@gmail.com
+            </h6>
+          </a>
+          <a href="">
+            <div class="img-box">
+              <i class="fa fa-phone" aria-hidden="true"></i>
+            </div>
+            <h6>
+              +256 701012753
+            </h6>
+          </a>
+        </div>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="info_social">
+        <div>
+          <a href="">
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </a>
+        </div>
+        <div>
+          <a href="">
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<footer class="footer_section">
+  <p>
+    &copy; <span id="displayYear"></span> All Rights Reserved By
+    Wallzray
+  </p>
+</footer>
+
+<script src="js/jquery-3.4.1.min.js"></script>
+<script src="js/bootstrap.js"></script>
+<script src="js/custom.js"></script>
+
+<script>
+  function form_ac(){
+    document.getElementById("acform").style.display= "block";
+  }
+  function form_aj(){
+    document.getElementById("ajform").style.display= "block";
+  }
+  function form_al(){
+    document.getElementById("alform").style.display= "block";
+  }
+  function form_a(){
+    document.getElementById("aform").style.display= "block";
+  }
+  function form_br(){
+    document.getElementById("brform").style.display= "block";
+  }
+  function form_l(){
+    document.getElementById("lform").style.display= "block";
+  }
+  function form_mc(){
+    document.getElementById("mcform").style.display= "block";
+  }
+  function form_mu(){
+    document.getElementById("muform").style.display= "block";
+  }
+  function form_ps(){
+    document.getElementById("psform").style.display= "block";
+  }
+  function form_t(){
+    document.getElementById("tform").style.display= "block";
+  }
+  function form_ch(){
+    document.getElementById("chform").style.display= "block";
+  }
+  function form_ma(){
+    document.getElementById("maform").style.display= "block";
+  }
+</script>
+</body>
+</html>
